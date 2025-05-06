@@ -90,7 +90,7 @@ print(df)
 
 # --- Export to Excel ---
 now = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-file_name = f"results_{now}.xlsx"
+file_name = f"results.xlsx"
 excel_title = "Full Factorial Experiment: Sorting Algorithms Performance Evaluation"
 
 with pd.ExcelWriter(file_name, engine='xlsxwriter') as writer:
@@ -101,4 +101,4 @@ with pd.ExcelWriter(file_name, engine='xlsxwriter') as writer:
     worksheet.set_row(0, 30)
     worksheet.set_column('A:F', 25)
 
-print(f"\n✅ Excel file created: {file_name}")
+print(f"\n Excel file created: {file_name}")
