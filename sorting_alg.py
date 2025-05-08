@@ -51,7 +51,7 @@ def measure_execution_time(sort_func, data):
 # --- Test Settings ---
 algorithms = [("Merge Sort", merge_sort), ("Quick Sort", quick_sort)]
 data_sizes = [10000, 100000]
-system_id = "System A"  # Change this manually on the second system
+system_id = "System B"  # Change this manually on the second system
 
 results = []
 
